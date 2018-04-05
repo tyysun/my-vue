@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <h1>{{copyright}}</h1>  
+    <p>{{copyright}}</p>  
   </footer>
 </template>
 
@@ -19,10 +19,8 @@ export default {
 <style scoped>
 footer{
   background: rgb(15, 97, 219);
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
-h1{
-  color: #222;
-}
+
 </style>
