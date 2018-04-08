@@ -1,24 +1,27 @@
 <template>
   <div id="app">
-    <app-header></app-header>
-    <users></users>
-    <app-footer></app-footer>  
-   
+    
+    <ul>
+      <li><router-link to='/'>Home</router-link></li>
+      <li><router-link to='/helloworld'>helloworld</router-link></li>
+    </ul>
+   <router-view></router-view>
   </div>
 </template>
-
+// 注意属性传值中a与b分别代表什么
 <script>
-import Users from './components/Users'
-import Header from './components/Header'
-import Footer from './components/Footer'
+
 
 export default {
   name: 'App',
+  data(){
+    return {}
+      
+  },
   components: {
-    'users':Users,
-    'app-header':Header,
-    'app-footer':Footer
-  }
+    
+  },
+ 
 }
 </script>
 
